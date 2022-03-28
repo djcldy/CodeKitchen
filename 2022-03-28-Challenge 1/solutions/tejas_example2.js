@@ -1,7 +1,9 @@
 /* 
 Definition: This function snaps rooms to each other    
 Psuedocode:
-
+1. Measure rooms
+2. Find relation between room
+3. Move selected room based on relation
 */
 
 function snapRoomsToEach({
