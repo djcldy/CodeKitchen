@@ -1,5 +1,6 @@
 /* 
-Definition: This function snaps rooms to each other    
+Definition: This function snaps rooms to each other  
+Parameter descriptions: what are the inputs?  
 Psuedocode:
 1. Measure rooms
 2. Find relation between room
@@ -117,7 +118,12 @@ function snapRoomsToEach({
     }
   } */
 
-  const { relationship, overlap } = getRoomRelationship(selected, collided);
+  const { relationship, overlap, dist } = getRoomRelationship(
+    selected,
+    collided
+  );
+
+  relationship = true; //will throw an error as relationship is a const
 
   switch (relationship) {
     case "left":
